@@ -1,0 +1,45 @@
+# Use this file for setting environment variables during local run.
+# On your local machine, copy this file to .env and populate missing values
+
+NODE_ENV=localdev
+
+LOG_LEVEL=debug
+LOG_FILE=logs/genesis-api.log
+ORDER_COMPLETE_NOTIFY_URL=http://localhost:2181/v1/public/orders/completed
+GI_PUBLIC_URL=http://local.greeninvoice.co.il
+GI_APP_URL=http://local.greeninvoice.co.il/app
+GI_API_URL=http://local.greeninvoice.co.il/api/v1
+SALES_APP_URL=https://genesis-editor.test.d.greeninvoice.co.il
+EDITOR_URL=https://genesis-editor.test.d.greeninvoice.co.il
+GENERATE_PAGE_THUMBNAILS=true
+SYSTEM_EMAIL=info@greeninvoice.co.il
+GI_SHARED_SECRET=zPHQw4uy2VKLyb8UYVcWzzXyQJ4Jp8sH
+
+TOKEN_COOKIE_NAME=_gi_token_test
+
+AWS_REGION=eu-west-1
+S3_BUCKET=greeninvoice-dev-cdn
+S3_CDN_URL=https://cdn.d.greeninvoice.co.il
+S3_DIRECTORY=sales-pages
+SQS_CLOUDFRONT_INVALIDATE=https://sqs.eu-west-1.amazonaws.com/048114476614/greeninvoice-dev-test-cloudfront-invalidate-microservice
+SQS_THUMBNAILS=https://sqs.eu-west-1.amazonaws.com/048114476614/greeninvoice-dev-test-bg-thumbnails
+
+ELASTIC_URL=http://localhost:9200
+ELASTIC_PREFIX=test_
+DYNAMO_REGION=eu-west-1
+DYNAMO_TABLE_PREFIX=TEST_
+
+POSTMARK_SERVER_TOKEN=
+
+PHP_JWE_KEY=
+PHP_JWE_IV=
+
+API_FLASH_TOKEN=
+
+# For tests only:
+PHP_JWE_KEY_TEST=
+REQUEST_TOKEN_ID_TEST=
+REQUEST_TOKEN_SECRET_TEST=
+
+# For local dev only:
+LOCALSTACK_ENDPOINT=http://localhost:4566

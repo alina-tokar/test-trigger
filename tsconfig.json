@@ -1,0 +1,33 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "target": "es2019",
+    "module": "commonjs",
+    "lib": ["es2019"],
+    "allowJs": true,
+    "outDir": "dist",
+    "rootDir": "src",
+
+    "declaration": true,
+    "sourceMap": true,
+
+    "esModuleInterop": false, // should be true
+    "resolveJsonModule": true,
+
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitReturns": true,
+    "noImplicitAny": false, // should be true
+    "strict": false, // should be true
+    "noUnusedLocals": true
+
+  },
+  "exclude": [
+    "node_modules"
+  ],
+  "include": [
+    "./src/**/*"
+  ]
+}
